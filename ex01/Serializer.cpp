@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 15:00:40 by eburnet           #+#    #+#             */
-/*   Updated: 2025/04/01 16:34:34 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/04/24 10:35:44 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ Serializer::Serializer(const Serializer &other)
 
 const Serializer &Serializer::operator=(const Serializer &other)
 {
-	(void)other;
+	if (this == &other)
+		return (*this);
 	return (*this);
 }
 

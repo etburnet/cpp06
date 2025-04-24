@@ -6,7 +6,7 @@
 /*   By: eburnet <eburnet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/28 11:31:10 by eburnet           #+#    #+#             */
-/*   Updated: 2025/04/09 10:32:40 by eburnet          ###   ########.fr       */
+/*   Updated: 2025/04/24 10:35:37 by eburnet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ ScalarConverter::ScalarConverter(const ScalarConverter &other)
 
 ScalarConverter & ScalarConverter::operator=(const ScalarConverter &other)
 {
-	(void)other;
+	if (this == &other)
+		return (*this);
 	return (*this);
 }
 
